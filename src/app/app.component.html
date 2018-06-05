@@ -1,0 +1,5 @@
+<app-header (listingClicked)="onListingClicked($event)"></app-header>
+
+<app-listing *ngFor="let l of listings" [title]="l.title" [description]="l.description"></app-listing>
+
+<p><i>Lorem ipsum</i></p>
