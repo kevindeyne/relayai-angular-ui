@@ -22,7 +22,8 @@ export class ListingComponent implements OnInit, OnDestroy {
   }
 
   onClick(event: MouseEvent) {
-    this.data.push('new title');
+    const target = (event.currentTarget as Element);
+    this.data.push(target.getElementsByTagName('h1')[0].textContent);
   }
 
 }
